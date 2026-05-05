@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
       {/* Product Image & Badges */}
       <div className="product-img-wrapper">
         <Link to={`/product/${product.id}`}>
-          <img src={mainImage} alt={product.name} className="product-img" />
+          <img src={mainImage} alt={product.name} className="product-img" /> 
         </Link>
         
         {/* Discount Badge */}

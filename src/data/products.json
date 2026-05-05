@@ -1,0 +1,96 @@
+[
+  {
+    "id": 101,
+    "name": "Royal Premium Cotton Panjabi",
+    "category": "panjabi",
+    "price": 3850,
+    "oldPrice": 4500,
+    "discount": "14% OFF",
+    "image": [
+      "https://images.unsplash.com/photo-1608748010899-18f300247112?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1597916829826-02e5bb0a54e0?q=80&w=600&auto=format&fit=crop"
+    ],
+    "rating": 4.8,
+    "inStock": true,
+    "description": "Crafted from handpicked premium cotton, this royal Panjabi features intricate collar embroidery, making it a perfect fit for Eid festivals and elite gatherings.",
+    "createdAt": "2026-04-10T10:00:00.000Z"
+  },
+  {
+    "id": 102,
+    "name": "Classic White Linen Kurta",
+    "category": "kurta",
+    "price": 2450,
+    "oldPrice": null,
+    "discount": null,
+    "image": [
+      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=600&auto=format&fit=crop"
+    ],
+    "rating": 4.9,
+    "inStock": true,
+    "description": "An ultra-breathable linen Kurta styled with a modern slim fit cut. Ideal for staying cool and looking sophisticated during warm summer days.",
+    "createdAt": "2026-04-12T08:30:00.000Z"
+  },
+  {
+    "id": 103,
+    "name": "Indigo Summer Casual Shirt",
+    "category": "shirt",
+    "price": 1850,
+    "oldPrice": 2200,
+    "discount": "15% OFF",
+    "image": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=600&auto=format&fit=crop"
+    ],
+    "rating": 4.7,
+    "inStock": true,
+    "description": "Featuring premium soft-washed cotton, this indigo printed casual shirt delivers a sharp, relaxed look that transitions smoothly from office to evening hangouts.",
+    "createdAt": "2026-04-15T11:20:00.000Z"
+  },
+  {
+    "id": 104,
+    "name": "Premium Silk Ready-to-Wear Dhuti",
+    "category": "dhuti",
+    "price": 1950,
+    "oldPrice": 2500,
+    "discount": "22% OFF",
+    "image": [
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop"
+    ],
+    "rating": 4.6,
+    "inStock": true,
+    "description": "Embrace the rich heritage with our ready-to-wear pleated Dhuti, tailored from pure blended silk with a comfortable elasticated waistband.",
+    "createdAt": "2026-05-01T09:00:00.000Z"
+  },
+  {
+    "id": 105,
+    "name": "Aura Luxury Geometrical Panjabi",
+    "category": "panjabi",
+    "price": 4200,
+    "oldPrice": null,
+    "discount": null,
+    "image": [
+      "https://images.unsplash.com/photo-1608748010899-18f300247112?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1597916829826-02e5bb0a54e0?q=80&w=600&auto=format&fit=crop"
+    ],
+    "rating": 5.0,
+    "inStock": true,
+    "description": "Elevate your ethnic wardrobe with this luxury Jacquard Panjabi, showcasing geometric self-weave patterns and custom metallic brand-signature buttons.",
+    "createdAt": "2026-05-03T14:45:00.000Z"
+  },
+  {
+    "id": 106,
+    "name": "Crimson Festive Kurta",
+    "category": "kurta",
+    "price": 2900,
+    "oldPrice": 3400,
+    "discount": "15% OFF",
+    "image": [
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop"
+    ],
+    "rating": 4.8,
+    "inStock": false,
+    "description": "Celebrate in style with this bold crimson Kurta, spun from a silk-cotton blend that offers a rich, subtle shine and ultimate wearing comfort.",
+    "createdAt": "2026-05-05T16:10:00.000Z"
+  }
+]

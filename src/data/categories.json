@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Panjabi",
+    "image": "https://images.unsplash.com/photo-1608748010899-18f300247112?q=80&w=600&auto=format&fit=crop",
+    "link": "/products?category=panjabi"
+  },
+  {
+    "id": 2,
+    "name": "Kurta",
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=600&auto=format&fit=crop",
+    "link": "/products?category=kurta"
+  },
+  {
+    "id": 3,
+    "name": "Shirt",
+    "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=600&auto=format&fit=crop",
+    "link": "/products?category=shirt"
+  },
+  {
+    "id": 4,
+    "name": "Dhuti",
+    "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=600&auto=format&fit=crop",
+    "link": "/products?category=dhuti"
+  },
+  {
+    "id": 5,
+    "name": "Dhuti",
+    "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=600&auto=format&fit=crop",
+    "link": "/products?category=dhuti"
+  },
+  {
+    "id": 6,
+    "name": "Dhuti",
+    "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=600&auto=format&fit=crop",
+    "link": "/products?category=dhuti"
+  }
+]

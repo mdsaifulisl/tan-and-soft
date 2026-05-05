@@ -1,0 +1,196 @@
+:root {
+  --primary: #C0846B;
+  --primary-dark: #A5644A;
+  --bg-soft: #FDF9F5;
+  --text-dark: #3A2C28;
+  --text-muted: #8B7A72;
+  --border: #EFE3DA;
+  --success: #7B9E87;
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(58, 44, 40, 0.06); /* কাস্টম শ্যাডো */
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+/* --- Base Override --- */
+body {
+  background-color: var(--bg-soft);
+  color: var(--text-dark);
+  font-family: 'Inter', 'Noto Serif Bengali', sans-serif; /* বাংলা ও ইংরেজি ফন্ট সামঞ্জস্য */
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Utility Helper Classes --- */
+.text-primary { color: var(--primary) !important; }
+.text-muted { color: var(--text-muted) !important; }
+.bg-primary { background-color: var(--primary) !important; }
+.bg-soft { background-color: var(--bg-soft) !important; }
+.border-soft { border-color: var(--border) !important; }
+
+/* --- Elegant Buttons (কাস্টম বোতাম) --- */
+.btn-elegant-base {
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.transition-all {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+
+/* সলিড বাটন */
+.btn-elegant {
+  background-color: var(--primary);
+  color: #ffffff !important;
+}
+
+.btn-elegant:hover:not(:disabled) {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(192, 132, 107, 0.2);
+}
+
+/* আউটলাইন বাটন */
+.btn-elegant-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+  background-color: transparent;
+}
+
+.btn-elegant-outline:hover:not(:disabled) {
+  background-color: var(--primary);
+  color: #ffffff !important;
+}
+
+/* --- Product Cards (পাঞ্জাবির কার্ড) --- */
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+/* --- Form Fields / Inputs (ইনপুট বক্স) --- */
+.elegant-input {
+  background-color: #ffffff;
+  border: 1px solid var(--border);
+  color: var(--text-dark);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.elegant-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(192, 132, 107, 0.15); /* প্রাইমারি রঙের গ্লো */
+}
+
+/* --- Badges (যেমন: "New", "Sale" বা "Stock Out" ট্যাগ) --- */
+.badge-elegant {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.badge-success-elegant {
+  background-color: var(--success);
+  color: #ffffff;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+
+
+/* --- Typography Setup --- */
+h1, h2, h3, h4, h5, h6, .heading1, .heading2, .heading3, .heading4, .heading5, .heading6 {
+  color: var(--text-dark);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.heading1 { font-size: calc(1.8rem + 1.5vw); } /* Responsive font */
+.heading2 { font-size: calc(1.6rem + 1vw); }
+.heading3 { font-size: calc(1.4rem + 0.5vw); }
+.heading4 { font-size: 1.5rem; }
+.heading5 { font-size: 1.25rem; }
+.heading6 { font-size: 1rem; }
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  p { font-size: 0.95rem; }
+}
+
+/* --- List Styling --- */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ul li {
+  list-style: disc;
+  margin-bottom: 0.5rem;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* --- NavLink Active Style --- */
+.nav-links a.active {
+  color: var(--primary) !important;
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+}
+
+/* --- Container Utility --- */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --- Responsive Images --- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,223 @@
+.main-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  padding: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-scrolled {
+  padding: 0.6rem 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo h1 {
+  margin-bottom: 0;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.logo h1 span {
+  color: var(--primary);
+}
+
+/* Desktop Nav */
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+  color: var(--primary);
+}
+
+/* Cart & Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.cart-link {
+  color: var(--text-dark);
+  transition: color 0.3s;
+}
+
+.cart-link:hover {
+  color: var(--primary);
+}
+
+.cart-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  height: 18px;
+  width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* Mobile Controls */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-dark);
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Responsive Logic */
+@media (max-width: 992px) {
+  .nav-links {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+    order: 1;
+  }
+
+  .logo {
+    order: 2;
+  }
+
+  .header-actions {
+    order: 3;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 280px;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 80px 2rem;
+    gap: 2rem;
+    box-shadow: 10px 0 30px rgba(0,0,0,0.1);
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1);
+    z-index: 2001;
+  }
+
+  .nav-links.nav-active {
+    transform: translateX(0);
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(58, 44, 40, 0.4);
+    backdrop-filter: blur(2px);
+    z-index: 1999;
+  }
+}
+
+
+/* --- Top Header Styles --- */
+.top-header {
+  background-color: var(--text-dark); /* আপনার ডার্ক টেক্সট কালারটি এখানে ব্যবহার করা হয়েছে */
+  padding: 8px 0;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.top-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-left p {
+  margin: 0;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-link {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.top-link:hover {
+  opacity: 1;
+}
+
+.top-socials {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.top-socials a {
+  color: #ffffff;
+  opacity: 0.8;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.top-socials a:hover {
+  color: var(--primary);
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+/* মোবাইলে টপ হেডারের কিছু অংশ হাইড করা (অপশনাল) */
+@media (max-width: 600px) {
+  .top-right {
+    display: none; /* মোবাইলে শুধু শিপিং অফার দেখাবে, সোশ্যাল/নম্বর হাইড থাকবে */
+  }
+  .top-header-flex {
+    justify-content: center;
+  }
+}

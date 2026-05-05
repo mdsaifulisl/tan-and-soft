@@ -12,6 +12,7 @@
     ],
     "rating": 4.8,
     "inStock": true,
+    "sizes": ["M", "L", "XL", "XXL"],
     "description": "Crafted from handpicked premium cotton, this royal Panjabi features intricate collar embroidery, making it a perfect fit for Eid festivals and elite gatherings.",
     "createdAt": "2026-04-10T10:00:00.000Z"
   },
@@ -27,6 +28,7 @@
     ],
     "rating": 4.9,
     "inStock": true,
+    "sizes": ["S", "M", "L", "XL"],
     "description": "An ultra-breathable linen Kurta styled with a modern slim fit cut. Ideal for staying cool and looking sophisticated during warm summer days.",
     "createdAt": "2026-04-12T08:30:00.000Z"
   },
@@ -43,6 +45,7 @@
     ],
     "rating": 4.7,
     "inStock": true,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
     "description": "Featuring premium soft-washed cotton, this indigo printed casual shirt delivers a sharp, relaxed look that transitions smoothly from office to evening hangouts.",
     "createdAt": "2026-04-15T11:20:00.000Z"
   },
@@ -59,6 +62,7 @@
     ],
     "rating": 4.6,
     "inStock": true,
+    "sizes": ["M", "L", "XL"],
     "description": "Embrace the rich heritage with our ready-to-wear pleated Dhuti, tailored from pure blended silk with a comfortable elasticated waistband.",
     "createdAt": "2026-05-01T09:00:00.000Z"
   },
@@ -75,6 +79,7 @@
     ],
     "rating": 5.0,
     "inStock": true,
+    "sizes": ["L", "XL", "XXL"],
     "description": "Elevate your ethnic wardrobe with this luxury Jacquard Panjabi, showcasing geometric self-weave patterns and custom metallic brand-signature buttons.",
     "createdAt": "2026-05-03T14:45:00.000Z"
   },
@@ -90,6 +95,7 @@
     ],
     "rating": 4.8,
     "inStock": false,
+    "sizes": ["S", "M", "L"],
     "description": "Celebrate in style with this bold crimson Kurta, spun from a silk-cotton blend that offers a rich, subtle shine and ultimate wearing comfort.",
     "createdAt": "2026-05-05T16:10:00.000Z"
   }

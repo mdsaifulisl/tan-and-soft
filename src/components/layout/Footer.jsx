@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import { Link } from 'react-router-dom';
 import { 
   FaFacebookF, 
@@ -12,19 +12,7 @@ import {
 import '../../style/Header.css';
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (email) {
-      // এখানে সাবস্ক্রিপশন API কল হবে
-      setSubscribed(true);
-      setEmail('');
-      setTimeout(() => setSubscribed(false), 5000); // ৫ সেকেন্ড পর সাকসেস মেসেজ চলে যাবে
-    }
-  };
-
+  
   return (
     <footer className="footer-section">
    

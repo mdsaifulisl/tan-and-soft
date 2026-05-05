@@ -1,0 +1,358 @@
+/* --- About Page Styles --- */
+.about-page {
+  background-color: #ffffff;
+  color: var(--text-dark, #222);
+  font-family: inherit;
+}
+
+/* Common Section Tags */
+.section-tag {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary, #a87a54);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.section-main-title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  margin-bottom: 25px;
+  color: var(--text-dark, #222);
+}
+
+/* --- Hero Section --- */
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)), 
+              url('https://images.unsplash.com/photo-1608748010899-18f300247112?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
+  padding: 100px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--primary, #a87a54);
+  display: block;
+  margin-bottom: 15px;
+}
+
+.about-hero-title {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.about-hero-desc {
+  font-size: 16px;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* --- Story Section --- */
+.about-story-section {
+  padding: 80px 0;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.story-image-box {
+  position: relative;
+}
+
+.main-story-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: var(--radius-md, 8px);
+}
+
+.story-img-badge {
+  position: absolute;
+  bottom: 25px;
+  right: -25px;
+  background-color: var(--text-dark, #222);
+  color: #ffffff;
+  padding: 20px 30px;
+  border-radius: var(--radius-sm, 4px);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.story-img-badge strong {
+  font-size: 18px;
+  color: var(--primary, #a87a54);
+  letter-spacing: 1px;
+}
+
+.story-img-badge span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.story-content-box {
+  padding-right: 20px;
+}
+
+.story-paragraph {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-muted, #555);
+  margin-bottom: 20px;
+}
+
+.mission-quote {
+  border-left: 3px solid var(--primary, #a87a54);
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.mission-quote blockquote {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--text-dark, #222);
+  line-height: 1.6;
+}
+
+/* --- Why Choose Us Section --- */
+.why-choose-section {
+  background-color: var(--text-dark, #161616);
+  padding: 80px 0;
+}
+
+.section-header-center {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: #222222;
+  border: 1px solid #2d2d2d;
+  padding: 35px 25px;
+  border-radius: var(--radius-md, 6px);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary, #a87a54);
+}
+
+.feature-icon-wrapper {
+  font-size: 32px;
+  color: var(--primary, #a87a54);
+  margin-bottom: 20px;
+  display: inline-flex;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 13px;
+  color: #999999;
+  line-height: 1.6;
+}
+
+/* --- Brand Values Section --- */
+.brand-values-section {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border, #eaeaea);
+}
+
+.values-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.value-item {
+  position: relative;
+  padding-top: 30px;
+}
+
+.value-num {
+  font-size: 50px;
+  font-weight: 900;
+  color: rgba(168, 122, 84, 0.15);
+  position: absolute;
+  top: -15px;
+  left: 0;
+  user-select: none;
+}
+
+.value-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark, #222);
+  margin-bottom: 12px;
+}
+
+.value-item p {
+  font-size: 14px;
+  color: var(--text-muted, #666);
+  line-height: 1.6;
+}
+
+/* --- Contact Section --- */
+.about-contact-section {
+  padding: 80px 0;
+  background-color: var(--bg-soft, #fafafa);
+}
+
+.contact-box-wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.contact-info-left h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.contact-info-left p {
+  font-size: 14px;
+  color: var(--text-muted, #666);
+  margin-bottom: 35px;
+}
+
+.contact-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-detail-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.contact-detail-item .c-icon {
+  font-size: 20px;
+  color: var(--primary, #a87a54);
+  margin-top: 3px;
+}
+
+.contact-detail-item span {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-muted, #777);
+  letter-spacing: 0.5px;
+}
+
+.contact-detail-item p {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark, #222);
+  margin: 2px 0 0 0;
+}
+
+.contact-cta-right {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--border, #eaeaea);
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.contact-cta-right h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.contact-cta-right p {
+  font-size: 13px;
+  color: var(--text-muted, #666);
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.about-cta-btn {
+  width: 100%;
+  padding: 14px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .main-story-img {
+    height: 380px;
+  }
+  .story-img-badge {
+    right: 15px;
+  }
+  .contact-box-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero-title {
+    font-size: 32px;
+  }
+  .section-main-title {
+    font-size: 26px;
+  }
+  .story-img-badge {
+    padding: 15px 20px;
+    right: 0;
+  }
+  .contact-cta-right {
+    padding: 30px 20px;
+  }
+}

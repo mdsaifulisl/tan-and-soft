@@ -1,0 +1,146 @@
+/* --- Categories Page Base Styles --- */
+.categories-page {
+  padding: 60px 0 100px 0;
+  background-color: var(--bg-soft, #fafafa);
+  min-height: 90vh;
+}
+
+.categories-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.back-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted, #777);
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.back-home-link:hover {
+  color: var(--primary, #a87a54);
+}
+
+.categories-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text-dark, #222);
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.categories-subtitle {
+  font-size: 15px;
+  color: var(--text-muted, #777);
+  max-width: 550px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* --- Category Cards Grid (3 Columns Layout) --- */
+.categories-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.category-card-1 {
+  background-color: #ffffff;
+  border-radius: var(--radius-md, 8px);
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--border, #eaeaea);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.category-card-1:hover {
+  transform: translateY(-8px);
+  border-color: var(--text-dark, #222);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Image Container & Zoom Effect */
+.category-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+}
+
+.category-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.category-card:hover .category-image-wrapper img {
+  transform: scale(1.08);
+}
+
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 60%, rgba(0,0,0,0.1) 100%);
+  transition: opacity 0.3s;
+}
+
+/* Card Information Panel */
+.category-details {
+  padding: 25px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #ffffff;
+}
+
+.category-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-dark, #222);
+  margin: 0;
+}
+
+.explore-btn {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary, #a87a54);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.3s ease;
+}
+
+.category-card:hover .explore-btn {
+  gap: 12px;
+  color: var(--text-dark, #222);
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 768px) {
+  .categories-title {
+    font-size: 26px;
+  }
+  .category-image-wrapper {
+    height: 320px;
+  }
+  .categories-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}

@@ -1,0 +1,196 @@
+/* --- Order Success Page Styles --- */
+.order-success-page {
+  padding: 80px 0;
+  background-color: var(--bg-soft, #fafafa);
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.success-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid var(--border, #eaeaea);
+  border-radius: var(--radius-md, 8px);
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+}
+
+/* Success Icon Animation */
+.success-icon-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.main-success-icon {
+  font-size: 80px;
+  color: #10b981; /* এমারেল্ড গ্রিন */
+  animation: scaleUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.success-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary, #a87a54);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.success-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-dark, #222);
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+.success-msg {
+  font-size: 15px;
+  color: var(--text-muted, #555);
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+/* Order Brief Box */
+.order-brief-box {
+  background-color: var(--bg-soft, #fafafa);
+  border: 1.5px solid var(--border, #eaeaea);
+  border-radius: var(--radius-sm, 6px);
+  padding: 25px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.brief-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark, #222);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border, #eaeaea);
+  padding-bottom: 10px;
+}
+
+.brief-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.brief-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: var(--text-muted, #666);
+}
+
+.order-num-text {
+  color: var(--text-dark, #222);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.total-amount-text {
+  color: var(--primary, #a87a54);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.delivery-time {
+  color: #10b981;
+  font-weight: 700;
+}
+
+/* Trust Notice Box */
+.success-notice-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f0f7f4;
+  border: 1px solid #d1eae1;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm, 4px);
+  margin-bottom: 35px;
+  text-align: left;
+}
+
+.notice-icon {
+  font-size: 20px;
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+.success-notice-box p {
+  font-size: 13px;
+  color: #155724;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Action Buttons */
+.success-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.continue-shopping-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 35px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Animation */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 576px) {
+  .success-card {
+    padding: 35px 20px;
+  }
+  .success-title {
+    font-size: 22px;
+  }
+  .success-msg {
+    font-size: 14px;
+  }
+  .order-brief-box {
+    padding: 18px;
+  }
+}

@@ -56,6 +56,8 @@ const Header = () => {
             <NavLink to="/products" onClick={closeMenu}>Shop</NavLink>
             <NavLink to="/categories" onClick={closeMenu}>Categories</NavLink>
             <NavLink to="/about" onClick={closeMenu}>About Us</NavLink>
+            <NavLink to="/admin" onClick={closeMenu}>Admin</NavLink>
+            <NavLink to="/admin/login" onClick={closeMenu}>Login</NavLink>
           </nav>
 
           <div className="header-actions">

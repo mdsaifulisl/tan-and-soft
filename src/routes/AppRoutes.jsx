@@ -13,6 +13,9 @@ import Checkout from "../pages/client/Checkout/Checkout";
 import Categories from "../pages/client/Categories/Categories";
 import About from "../pages/client/About/About";
 import OrderSuccess from "../pages/client/OrderSuccess/OrderSuccess";
+// admin pages
+import AdminLogin from "../pages/admin/Login/AdminLogin";
+import AdminLayout from "../layouts/AdminLayout";
 
 const AppRoutes = () => {
   return (
@@ -28,6 +31,25 @@ const AppRoutes = () => {
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/order-success" element={<OrderSuccess />} />
+        </Route>
+
+        <Route path="/admin/login" element={<AdminLogin />} />
+
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<div>Dashboard Management Coming Soon...</div>} />
+          
+          <Route
+            path="products"
+            element={<div>Products Management Coming Soon...</div>}
+          />
+          <Route
+            path="orders"
+            element={<div>Orders Management Coming Soon...</div>}
+          />
+          <Route
+            path="customers"
+            element={<div>Customers Management Coming Soon...</div>}
+          />
         </Route>
 
         <Route
